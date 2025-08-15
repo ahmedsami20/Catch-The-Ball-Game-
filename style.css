@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(180deg, #f0f8ff, #add8e6);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#gameArea {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(255,0,0,0.6);
+}
+
+#paddle {
+    width: 80px;
+    height: 12px;
+    background-color: blue;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 8px rgba(0,0,255,0.5);
+}
+
+#hud {
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#score, #lives {
+    font-weight: bold;
+}
